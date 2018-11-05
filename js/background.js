@@ -20,7 +20,7 @@
 // or on gist.github.com, this function will open a new tab and load
 // the notebook into Colab.
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+browser.browserAction.onClicked.addListener(function(tab) {
   const colab_url = 'https://colab.research.google.com/';
   const github = /^https?:\/\/github\.com\/(.+)\/(.*\.ipynb)$/;
   const gist =
@@ -37,7 +37,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   }
 
   if (url) {
-    chrome.tabs.create({'url': url});
+    browser.tabs.create({'url': url});
   } else {
     alert('Current page is not recognized as a github-hosted notebook');
   }
