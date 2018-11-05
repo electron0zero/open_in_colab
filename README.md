@@ -6,6 +6,7 @@ notebook on github, will open that notebook in
 
 ## Installing the Extension
 
+Install from Firefox Add-ons: https://addons.mozilla.org/en-US/firefox/addon/open-in-colab/
 
 ## Development Install
 
